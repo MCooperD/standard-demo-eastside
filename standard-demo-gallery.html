@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Work — Eastside Property Maintenance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #1a1d1f; --bg-panel: #23272a; --accent: #f5a623; --accent-dark: #c9860f;
+    --urgent: #c0392b; --steel: #8a8f94; --paper: #eeece5; --paper-dim: #b8b6ae; --line: #34393c;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--paper); font-family: 'Work Sans', sans-serif; line-height: 1.6; }
+  h1, h2, h3 { font-family: 'Anton', sans-serif; font-weight: 400; letter-spacing: 0.5px; text-transform: uppercase; margin: 0; }
+  a { color: inherit; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  .eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); }
+  nav { position: sticky; top: 0; z-index: 50; background: rgba(26,29,31,0.92); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; }
+  .nav-links { display: flex; gap: 26px; align-items: center; }
+  .nav-links a { text-decoration: none; color: var(--paper-dim); font-size: 14px; font-weight: 500; }
+  .nav-links a:hover, .nav-links a.current { color: var(--accent); }
+  @media (max-width: 700px) { .nav-links { display: none; } }
+  .brand { font-family: 'Anton', sans-serif; font-size: 20px; letter-spacing: 0.5px; }
+  .brand span { color: var(--accent); }
+  .nav-cta { background: var(--accent); color: #1a1d1f; font-weight: 700; padding: 10px 20px; border-radius: 3px; text-decoration: none; font-size: 14px; font-family: 'Work Sans', sans-serif; }
+  .section { padding: 70px 0; }
+  .hero-page h1 { font-size: 44px; margin: 12px 0 18px; }
+  .hero-page p { color: var(--paper-dim); max-width: 600px; font-size: 17px; }
+  .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 40px; }
+  .gallery-item {
+    background: linear-gradient(135deg, var(--bg-panel), #2d3235);
+    border: 1px dashed var(--steel);
+    border-radius: 6px;
+    height: 220px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--steel); font-family: 'JetBrains Mono', monospace; font-size: 12px; text-align: center; padding: 16px;
+  }
+  .gallery-item .caption { color: var(--paper); font-family: 'Work Sans', sans-serif; font-size: 13.5px; font-weight: 600; margin-top: 8px; }
+  footer { border-top: 1px solid var(--line); padding: 34px 0; color: var(--paper-dim); font-size: 13.5px; }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  footer .mono { color: var(--steel); font-family: 'JetBrains Mono', monospace; }
+  @media (max-width: 800px) { .gallery-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 500px) { .gallery-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">EASTSIDE <span>PROPERTY MAINTENANCE</span></div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="standard-demo-about.html">About</a>
+      <a href="standard-demo-gallery.html" class="current">Our Work</a>
+      <a href="index.html#quote" class="nav-cta">Get a Free Quote</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section hero-page">
+  <div class="wrap">
+    <div class="eyebrow">Recent jobs</div>
+    <h1>Our Work</h1>
+    <p>A look at some recent jobs across the Eastern Suburbs. Real photos of your own work go here once we're building your actual site.</p>
+
+    <div class="gallery-grid">
+      <div>
+        <img src="images/fence-repair-coogee.png" alt="Fence repair in Coogee" style="width:100%; height:220px; object-fit:cover; border-radius:6px; border:1px solid var(--line);">
+        <div class="caption">Fence repair — Coogee</div>
+      </div>
+      <div>
+        <img src="images/garden-tidyup-bondi.png" alt="Garden tidy-up in Bondi" style="width:100%; height:220px; object-fit:cover; border-radius:6px; border:1px solid var(--line);">
+        <div class="caption">Garden tidy-up — Bondi</div>
+      </div>
+      <div>
+        <img src="images/gutter-clean-randwick.png" alt="Gutter clean in Randwick" style="width:100%; height:220px; object-fit:cover; border-radius:6px; border:1px solid var(--line);">
+        <div class="caption">Gutter clean — Randwick</div>
+      </div>
+      <div>
+        <img src="images/rental-turnover-paddington.png" alt="Rental turnover renovation in Paddington" style="width:100%; height:220px; object-fit:cover; border-radius:6px; border:1px solid var(--line);">
+        <div class="caption">Rental turnover — Paddington</div>
+      </div>
+      <div>
+        <img src="images/deck-repair-rosebay.png" alt="Deck repair in Rose Bay" style="width:100%; height:220px; object-fit:cover; border-radius:6px; border:1px solid var(--line);">
+        <div class="caption">Deck repair — Rose Bay</div>
+      </div>
+      <div>
+        <img src="images/tap-replacement-maroubra.png" alt="Tap replacement in Maroubra" style="width:100%; height:220px; object-fit:cover; border-radius:6px; border:1px solid var(--line);">
+        <div class="caption">Tap replacement — Maroubra</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© Eastside Property Maintenance — Eastern Suburbs, Sydney</div>
+    <div class="mono">0400 000 000 · hello@eastsidemaintenance.com.au</div>
+  </div>
+</footer>
+
+</body>
+</html>
